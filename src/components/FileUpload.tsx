@@ -14,7 +14,7 @@ export default function FileUpload({}: Props) {
   const router = useRouter()
 
 
-  const {mutate,isLoading} = useMutation({
+  const {mutate} = useMutation({
     mutationFn:async ({fileKey,fileName}:FileRequest)=>{
       const payload : FileRequest = {
         fileKey,
